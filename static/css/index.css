@@ -2,6 +2,18 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.iframe-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the iframe */
+  align-items: center;     /* Vertically center the iframe */
+  height: 100vh;           /* Set the container's height to the viewport height */
+}
+
+iframe {
+  width: 100%;              /* Set the width of the iframe as desired */
+  height: 80vh;            /* Set the height of the iframe as desired */
+  border: none;            /* Remove the iframe border if needed */
+}
 
 .footer .icon-link {
     font-size: 25px;
