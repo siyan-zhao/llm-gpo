@@ -126,22 +126,56 @@ For few-shot learning, we parameterize this module as an in-context autoregressi
             These tasks involve adapting to the preferences of US demographic groups, global countries, and individual users. Our results demonstrate that GPO not only aligns models more accurately but also requires fewer group-specific preferences, 
             and less training and inference computing resources, outperforming existing strategies such as in-context steering and fine-tuning methods.
           </p>
+
+          <figure>
+            <img src="static/GPO.png" alt="GPO" style="width:100%">
+          </figure>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/99VMVrFfBFM?si=h3hqyFFx9XHWnvPN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+          <h2 class="title is-3">Method</h2>
+          <p>
+            GPO performs few-shot supervised learning of human preference scores over LLM outputs. These predicted group preference scores can be utilized within downstream LLM alignment methods such as best-of-n sampling or PPO.
+            GPO parameterizes a novel transformer module which in-context learns to predict group preference scores for new LLM outputs given a few examples of LLM outputs and ground-truth preference scores from that group.
+          </p>
+          <h2 class="title is-3">Results</h2>
+
+          <p>
+            GPO-aligned LLM outputs exhibit higher alignment scores compared with common baseline methods for multiple popular open-source models across varying parameter and pretraining dataset size scales, and opinion datasets.
+
+          </p>
+
+          <p>
+            Qualitatively, we find that GPO-aligned LLM output distributions are significantly more similar to group ground truth distributions than baseline methods.
+          </p>
+
+          <p>
+            GPO is also significantly more sample efficient than baseline methods, achieving higher alignment scores while using fewer examples.
+          </p>
+
+          <p>
+            We also show that GPO is also able to adapt to a single individual’s preferences, a setting where there is often much higher variance between preference datasets than the group preference alignment setting.
+          </p>
+
+          <h2 class="title is-3">Discussion and Future Work</h2>
+
+          <p>
+            
+          </p>
         </div>
+
+        
       </div>
     </div>
     <!--/ Abstract. -->
 
-    <div class="is-centered">
-      <figure>
-        <img src="static/GPO.png" alt="GPO" style="width:100%">
-
-      </figure>
-    </div>
-    <div class=".iframe-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/99VMVrFfBFM?si=h3hqyFFx9XHWnvPN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- <div class="is-centered">
+      
+    </div> -->
+    <!-- <div class=".iframe-container">
+      
     
 
-    </div>
+    </div> -->
 
   </div>
 </section>
