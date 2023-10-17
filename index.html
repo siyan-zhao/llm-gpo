@@ -6,6 +6,11 @@
     max-width: 60%; /* or any other percentage or fixed value you prefer */
   }
   </style>
+  .image {
+    width: 100%;
+    max-width: 1250px; /* or any other preferred value */
+    height: auto;
+}
   <meta charset="utf-8">
   <meta name="description"
         content="Group Preference Optimization: Few-Shot Alignment of Large Language Models.">
@@ -111,7 +116,7 @@ For few-shot learning, we parameterize this module as an in-context autoregressi
             These tasks involve adapting to the preferences of US demographic groups, global countries, and individual users. Our results demonstrate that GPO not only aligns models more accurately but also requires fewer group-specific preferences, 
             and less training and inference computing resources, outperforming existing strategies such as in-context steering and fine-tuning methods.
           </p>
-          <img src="static/gpo_1.gif" alt="gpo"  width="1250" />
+          <img src="static/gpo_1.gif" alt="gpo" class="image">
 
           <!-- <figure>
             <img src="static/GPO.png" alt="GPO" style="width:100%">
