@@ -129,11 +129,25 @@ For few-shot learning, we parameterize this module as an in-context autoregressi
             These tasks involve adapting to the preferences of US demographic groups, global countries, and individual users. Our results demonstrate that GPO not only aligns models more accurately but also requires fewer group-specific preferences, 
             and less training and inference computing resources, outperforming existing strategies such as in-context steering and fine-tuning methods.
           </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2hf44OoEv0?si=eINdo49kHLbI8L-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
           <!-- <figure>
             <img src="static/GPO.png" alt="GPO" style="width:100%">
           </figure> -->
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2hf44OoEv0?si=eINdo49kHLbI8L-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <h2 class="title is-3">Background</h2>
+
+          While prior methods including supervised fine-tuning, prompting, and context learning have been useful in many alignment settings, these methods perform poorly for aligning LLM outputs to group preferences, especially in low data regimes.
+
+          <figure>
+            <img src="static/steer_alpaca.png" alt="qualitative example for climate question" style="width:100%">
+          </figure>
+          
+          <figure>
+            <img src="static/steer_llama2.png" alt="qualitative example for climate question" style="width:100%">
+          </figure>
+
+
           <h2 class="title is-3">Method</h2>
           <p>
             GPO performs few-shot supervised learning of human preference scores over LLM outputs. These predicted group preference scores can be utilized within downstream LLM alignment methods such as best-of-n sampling or PPO.
@@ -157,6 +171,9 @@ For few-shot learning, we parameterize this module as an in-context autoregressi
           <figure>
             <img src="static/climate.png" alt="qualitative example for climate question" style="width:100%">
           </figure>
+
+         
+
 
           <p>
             GPO is also significantly more sample efficient than baseline methods, achieving higher alignment scores while using fewer examples.
