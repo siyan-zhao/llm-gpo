@@ -62,7 +62,10 @@
           <h1 class="title is-1 publication-title">Group Preference Optimization: Few-Shot Alignment of Large Language Models</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://google.com">xxx</a><sup>1</sup>,</span>
+              <a href="https://google.com">Siyan Zhao</a><sup>1</sup>,
+              <a href="https://google.com">John Dang</a><sup>1</sup>,
+              <a href="https://google.com">Aditya Grover</a><sup>1</sup>,
+            </span>
            
           </div>
 
@@ -143,17 +146,34 @@ For few-shot learning, we parameterize this module as an in-context autoregressi
 
           </p>
 
+          <figure>
+            <img src="static/alignment_results.png" alt="qualitative example for climate question" style="width:100%">
+          </figure>
+
           <p>
             Qualitatively, we find that GPO-aligned LLM output distributions are significantly more similar to group ground truth distributions than baseline methods.
           </p>
+
+          <figure>
+            <img src="static/climate.png" alt="qualitative example for climate question" style="width:100%">
+          </figure>
 
           <p>
             GPO is also significantly more sample efficient than baseline methods, achieving higher alignment scores while using fewer examples.
           </p>
 
+
+          <figure>
+            <img src="static/efficiency.png" alt="qualitative example for climate question" style="width:100%">
+          </figure>
+
           <p>
             We also show that GPO is also able to adapt to a single individual’s preferences, a setting where there is often much higher variance between preference datasets than the group preference alignment setting.
           </p>
+
+          <figure>
+            <img src="static/individual.png" alt="qualitative example for climate question" style="width:100%">
+          </figure>
 
           <h2 class="title is-3">Discussion and Future Work</h2>
 
