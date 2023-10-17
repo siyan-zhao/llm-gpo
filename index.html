@@ -136,17 +136,17 @@ For few-shot learning, we parameterize this module as an in-context autoregressi
             <img src="static/GPO.png" alt="GPO" style="width:100%">
           </figure> -->
           <h2 class="title is-3">Background</h2>
-
-          While prior methods including supervised fine-tuning, prompting, and context learning have been useful in many alignment settings, these methods perform poorly for aligning LLM outputs to group preferences, especially in low data regimes.
-
+          LLM may disproportionately over-represent some groups and under-represent others. Although guiding an LLM using prompts such as "Speak as xxx" can enhance its performance, this approach is limited and can sometimes lead to misrepresentation.
           <figure>
-            <img src="static/steer_alpaca.png" alt="qualitative example for climate question" style="width:100%">
+            <img src="static/plot_basesteer_sidebyside.png" alt="qualitative example for climate question" style="width:100%">
           </figure>
           
-          <figure>
-            <img src="static/steer_llama2.png" alt="qualitative example for climate question" style="width:100%">
-          </figure>
+          
+          While prior methods including supervised fine-tuning, prompting, and context learning have been useful in many alignment settings, these methods could perform poorly and be computationally expensive for aligning LLM outputs to group preferences, especially in low data regimes.
 
+          
+          
+          
 
           <h2 class="title is-3">Method</h2>
           <p>
