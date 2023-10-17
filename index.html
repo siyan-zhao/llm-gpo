@@ -191,13 +191,13 @@ For few-shot learning, we parameterize this module as an in-context autoregressi
     Qualitatively, we find that GPO-aligned LLM output distributions are significantly more similar to group ground truth distributions than baseline methods.
 </p>
 <p>
-    The first row depicts the ground truth group opinion distribution. With limited context samples, GPO successfully adapts to match the opinion distributions of different groups. 
+    In the qualitative example below, the first row depicts the ground truth group opinion distribution. With limited context samples, GPO successfully adapts to match the opinion distributions of different groups. 
     For instance, it increases preference for option A when adapted to the group <em>Hindus</em>, whereas other steered LMs do not exhibit correct distribution changes. In particular, 
     <em>Llama2-13b-steered</em> seems biased towards a specific option, overemphasizing it instead of providing an accurate reflection of the targeted group's distribution.
 </p>
 <p>
     In contrast, for demographics like <em>College graduate/some postgrad</em> that have a balanced opinion distribution, GPO preserves this balance effectively. This underlines 
-    GPO's ability not just to align with broad dataset group preferences, but also to fine-tune its alignment to specific groups with minimal context.
+    GPO's ability not just to align with broad dataset group preferences, but also to fine-tune its alignment to specific groups with limited context.
 </p>
 
           </p>
