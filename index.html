@@ -151,8 +151,24 @@ For few-shot learning, we parameterize this module as an in-context autoregressi
           <h2 class="title is-3">Method</h2>
           <p>
             GPO performs few-shot supervised learning of human preference scores over LLM outputs. These predicted group preference scores can be utilized within downstream LLM alignment methods such as best-of-n sampling or PPO.
+          </p>
+
+          <figure>
+            <img src="static/algo.png" alt="qualitative example for climate question" style="width:100%">
+          </figure>
+
+
+
+          <p>
             GPO parameterizes a novel transformer module which in-context learns to predict group preference scores for new LLM outputs given a few examples of LLM outputs and ground-truth preference scores from that group.
           </p>
+
+          <figure>
+            <img src="static/gpo_transformer.png" alt="qualitative example for climate question" style="width:100%">
+          </figure>
+
+
+
           <h2 class="title is-3">Results</h2>
 
           <p>
